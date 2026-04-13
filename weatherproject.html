@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Project Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html#"><img src="Logo.png" height="60px"/></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h1>Weather Project</h1>
+
+  <p>import time as t</p>
+  <p>import datetime as dt</p>
+  <p>from urllib import request<br></p>
+  <p>weatherurl = "https://wttr.in/NewYork?format=3"</p>
+
+<p>weatherapp = request.urlopen(weatherurl)</p>
+<p>weather = weatherapp.read().decode('utf-8')</p>
+
+
+time = t.ctime()
+print("Hello User")
+print("Today is", time)
+print("Weather in " + weather)</p>   
+  </div>
+
+</section>
+
+</body>
+</html>
